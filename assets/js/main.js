@@ -77,14 +77,12 @@
   var hero = document.querySelector(".hero");
   var initHeroParallax = function () {
     if (!hero) return;
-    gsap.set([hero.querySelector(".hero-photo"), hero.querySelector(".hero-panel")].concat(
-      Array.prototype.slice.call(hero.querySelectorAll(".chip"))
-    ), { clearProps: "y,opacity" });
-    gsap.to(hero.querySelector(".hero-photo"), {
+    gsap.set(hero.querySelectorAll(".hero-photo, .hero-panel, .chip"), { clearProps: "y,opacity" });
+    gsap.to(hero.querySelectorAll(".hero-photo"), {
       y: -46, ease: "none",
       scrollTrigger: { trigger: hero, start: "top top", end: "bottom top", scrub: 0.6 }
     });
-    gsap.to(hero.querySelector(".hero-panel"), {
+    gsap.to(hero.querySelectorAll(".hero-panel"), {
       y: 70, ease: "none",
       scrollTrigger: { trigger: hero, start: "top top", end: "bottom top", scrub: 0.6 }
     });
@@ -96,8 +94,7 @@
   if (hero && !document.hidden) {
     var tl = gsap.timeline({ defaults: { ease: "power3.out" }, onComplete: initHeroParallax });
     tl.from(hero.querySelectorAll(".hero-copy > *"), { y: 34, opacity: 0, duration: 0.9, stagger: 0.09 })
-      .from(hero.querySelector(".hero-panel"), { y: 60, opacity: 0, duration: 1 }, 0.25)
-      .from(hero.querySelector(".hero-photo"), { y: 80, opacity: 0, duration: 1.1 }, 0.35)
+      .from(hero.querySelectorAll(".hero-photo"), { y: 80, opacity: 0, duration: 1.1 }, 0.35)
       .from(hero.querySelectorAll(".chip"), { y: 26, opacity: 0, duration: 0.8, stagger: 0.14 }, 0.8);
   } else if (hero) {
     initHeroParallax();

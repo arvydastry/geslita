@@ -52,7 +52,6 @@ Visos nuotraukos ir video – iš [Pexels](https://www.pexels.com) (Pexels licen
 
 | Failas | Pexels ID | Autorius |
 |---|---|---|
-| hero-gesintuvas.jpg | [571252](https://www.pexels.com/photo/571252/) | Levi Damasceno |
 | patikra-siena.jpg | [12072478](https://www.pexels.com/photo/12072478/) | Jan van der Wolf |
 | patikra-balta.jpg | [12939477](https://www.pexels.com/photo/12939477/) | Mark John Hilario |
 | signalizacija.jpg | [39183053](https://www.pexels.com/photo/39183053/) | Caleb Oquendo |
@@ -66,6 +65,8 @@ Visos nuotraukos ir video – iš [Pexels](https://www.pexels.com) (Pexels licen
 | gesintuvas-vert.jpg | [4805958](https://www.pexels.com/photo/4805958/) | Ian Panelo |
 | assets/video/smoke.mp4 | [7122113](https://www.pexels.com/video/7122113/) | (autorius Pexels puslapyje) |
 
+Hero Lietuvos žemėlapio kontūras (su apskritimis) – iš [amCharts SVG maps](https://www.amcharts.com/svg-maps/) (nemokamas naudojimas su nuoroda); miestų taškai suprojektuoti Merkatoriaus projekcija pagal koordinates.
+
 ## Turinys, kurį reikia patvirtinti su klientu
 
 - Pažadas „priminsime apie artėjančią patikrą" ir „didesnį kiekį pasiimame iš objekto" – ar įmonė taip dirba?
@@ -73,6 +74,10 @@ Visos nuotraukos ir video – iš [Pexels](https://www.pexels.com) (Pexels licen
 - Patikros periodiškumo formuluotė („ne rečiau kaip kartą per metus") – suderinti su galiojančiais teisės aktais.
 - Papildomų paslaugų sąrašas (visuomenės sveikata, kenkėjų kontrolė, higienos mokymai) – patikslinti pagal faktinį sąrašą.
 - Adresas Fabijoniškių g. 4A ir rekvizitai (įmonės kodas, PVM) – patikslinti.
+
+## v2 dizainas (lokalus eksperimentas)
+
+Kataloge [`v2/`](v2/index.html) – drąsesnė to paties turinio versija (tie patys 4 puslapiai), šviesiu popieriaus fonu: tamsios liko tik firminės juostos (hero su „UGNIS NELAUKIA." – ugnies gradientas ir dūmai prasišviečia pro raides per mix-blend multiply, evakuacijos „glow" ir „12 mėn." žiedo juostos). Pilnas meniu antraštėje (mobiliame – fullscreen overlay), kontūrinio teksto marquee, horizontalus paslaugų „scroll-hijack" (mobiliame – vertikalus sąrašas), Lenis sklandus skrolas, raudonas CTA blokas, kontūriniai skaičiai ir vandenženkliai. Antraštėje logotipas keičiasi automatiškai (baltas ant tamsaus hero, originalus ant šviesaus fono). Peržiūra: `http://localhost:8123/v2/`. Nuotraukos naudojamos iš šakninio `assets/`. Salient kontekste hero kaukė, pan ir marquee būtų Custom CSS/JS sluoksnis (Theme Options), likusi struktūra – įprastos WPBakery eilutės. Į GitHub Pages nekeliama, kol klientas nepasirinks krypties.
 
 ## v2 kandidatai
 
