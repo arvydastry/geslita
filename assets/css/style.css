@@ -833,6 +833,74 @@ p:last-child { margin-bottom: 0; }
 .svc-body .checks .ic { margin-top: 3px; color: var(--red); font-size: 15px; }
 .svc-body .link-more { margin-top: 6px; }
 
+/* Kainų žymė paslaugos antraštėje */
+.price-tag {
+  flex: none;
+  margin-left: auto;
+  align-self: center;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: var(--red-soft);
+  color: var(--red-deep);
+  font: 700 13.5px/1 var(--fb);
+  white-space: nowrap;
+}
+
+/* Teisinė / normatyvinė pastaba */
+.law-note {
+  border-left: 3px solid var(--red);
+  background: var(--red-soft);
+  padding: 14px 18px;
+  border-radius: 0 var(--r-s) var(--r-s) 0;
+  font-size: 14.5px;
+  color: var(--text);
+}
+.law-note b { color: var(--ink); }
+.svc-body .law-note, .svc-body .tbl, .svc-body details.acc { margin-top: 16px; }
+.svc-body .mini-note { font-size: 13.5px; color: var(--muted); margin-top: 10px; }
+
+/* Duomenų lentelė */
+.tbl { overflow-x: auto; border: 1px solid var(--line-soft); border-radius: var(--r); background: var(--card); }
+.tbl table { width: 100%; border-collapse: collapse; font-size: 14.5px; line-height: 1.5; min-width: 380px; }
+.tbl caption {
+  text-align: left;
+  padding: 12px 18px;
+  background: var(--paper-2);
+  border-bottom: 1px solid var(--line-soft);
+  color: var(--ink);
+  font: 700 12.5px/1.3 var(--fd);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.tbl th { background: var(--paper); text-align: left; color: var(--ink); font-weight: 600; white-space: nowrap; }
+.tbl th, .tbl td { padding: 10px 18px; border-bottom: 1px solid var(--line-soft); vertical-align: top; }
+.tbl tr:last-child td { border-bottom: 0; }
+.tbl .num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.tbl td b { color: var(--ink); }
+
+/* Išskleidžiamas kainoraštis */
+details.acc { border: 1px solid var(--line-soft); border-radius: var(--r); background: var(--card); overflow: hidden; box-shadow: 0 2px 10px -4px rgba(20, 22, 27, 0.06); }
+details.acc + details.acc { margin-top: 12px; }
+details.acc summary {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 17px 20px;
+  cursor: pointer;
+  list-style: none;
+  color: var(--ink);
+  font: 600 16.5px/1.3 var(--fb);
+}
+details.acc summary::-webkit-details-marker { display: none; }
+details.acc summary small { color: var(--muted); font-weight: 500; margin-left: auto; }
+details.acc summary .ic { flex: none; font-size: 18px; color: var(--red); transition: transform 0.3s var(--ease); }
+details.acc[open] summary .ic { transform: rotate(180deg); }
+details.acc .acc-body { padding: 0 20px 20px; }
+details.acc .acc-body .tbl { margin-top: 2px; }
+
+/* Kainos eilutė pradžios kortelėse */
+.svc-card-body .price-line { margin: -6px 0 14px; font: 700 13.5px/1.3 var(--fb); color: var(--red-deep); }
+
 /* ---------- Detalės puslapis ---------- */
 
 .detail-head { padding-bottom: clamp(96px, 12vw, 140px); }

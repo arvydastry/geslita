@@ -74,10 +74,17 @@ Hero Lietuvos žemėlapio kontūras (su apskritimis) – iš [amCharts SVG maps]
 - Patikros periodiškumo formuluotė („ne rečiau kaip kartą per metus") – suderinti su galiojančiais teisės aktais.
 - Papildomų paslaugų sąrašas (visuomenės sveikata, kenkėjų kontrolė, higienos mokymai) – patikslinti pagal faktinį sąrašą.
 - Adresas Fabijoniškių g. 4A ir rekvizitai (įmonės kodas, PVM) – patikslinti.
+- Visos kainos (gesintuvų, vandentiekio, signalizacijos, planų) – iš senojo kainoraščio su litais, būtina atnaujinti.
 
 ## v2 dizainas (lokalus eksperimentas)
 
 Kataloge [`v2/`](v2/index.html) – drąsesnė to paties turinio versija (tie patys 4 puslapiai), šviesiu popieriaus fonu: tamsios liko tik firminės juostos (hero su „UGNIS NELAUKIA." – ugnies gradientas ir dūmai prasišviečia pro raides per mix-blend multiply, evakuacijos „glow" ir „12 mėn." žiedo juostos). Pilnas meniu antraštėje (mobiliame – fullscreen overlay), kontūrinio teksto marquee, horizontalus paslaugų „scroll-hijack" (mobiliame – vertikalus sąrašas), Lenis sklandus skrolas, raudonas CTA blokas, kontūriniai skaičiai ir vandenženkliai. Antraštėje logotipas keičiasi automatiškai (baltas ant tamsaus hero, originalus ant šviesaus fono). Peržiūra: `http://localhost:8123/v2/`. Nuotraukos naudojamos iš šakninio `assets/`. Salient kontekste hero kaukė, pan ir marquee būtų Custom CSS/JS sluoksnis (Theme Options), likusi struktūra – įprastos WPBakery eilutės. Į GitHub Pages nekeliama, kol klientas nepasirinks krypties.
+
+## v3 eksperimentas (atmestas)
+
+Kataloge `v3/` liko konservatyvios versijos eksperimentas; kryptis atmesta, o jam surinktas originalus geslita.lt turinys (kainoraščiai, tipai, periodiškumas, teisinis pagrindas) perkeltas į pagrindinę versiją: kainų žymės ir lentelės `paslaugos.html` blokuose, išskleidžiamas pilnas kainoraštis `gesintuvu-patikra.html`, kainų eilutės pradžios kortelėse.
+
+**Svarbu dėl kainų:** originalioje svetainėje kainoraščiai dar su litais (iki 2015 m.), demo rodomos tik EUR „nuo" kainos. Prieš paleidžiant naują svetainę klientas privalo visas kainas peržiūrėti ir atnaujinti.
 
 ## v2 kandidatai
 
